@@ -1,4 +1,4 @@
-# AI-Powered Chatbot
+1. AI-Powered Chatbot
 
 A professional AI-powered chatbot built with Python, Flask, and NLP.  
 
@@ -17,7 +17,7 @@ A professional AI-powered chatbot built with Python, Flask, and NLP.
 6. Open browser: `http://127.0.0.1:5000`
 
 
-# Automated Resume Parser
+2. Automated Resume Parser
 
 ## Overview
 The **Automated Resume Parser** is a web application built with **Python, Flask, spaCy, and PostgreSQL**. It extracts structured information such as **name, email, and skills** from uploaded resumes (PDF or DOCX) and stores the data in a database for easy retrieval and analysis.
@@ -51,11 +51,3 @@ This project demonstrates **NLP, web development, and database integration** —
 | File Parsing | pdfplumber, python-docx |
 
 ---
-
-## Installation
-
-1. **Clone the repository**
-
-```bash
-git clone <your-repo-url>
-cd resume-parser
