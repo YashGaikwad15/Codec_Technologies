@@ -83,5 +83,38 @@ This project demonstrates **data visualization, web development, and API integra
 ---
 
 
+# Secure Authentication System
+
+A **Flask-based secure authentication system** with:
+
+- Signup, login, and logout functionality  
+- Password hashing using **Werkzeug**  
+- Session management using **Flask-Login**  
+- Flash messages for feedback  
+- Client-side form validation and password toggle with **JavaScript**  
+- Responsive, modern UI with **CSS gradients and animations**  
+- SQLite database for storing user accounts  
 
 ---
+
+## **Features**
+
+1. **Signup**
+   - Users can create an account with a **unique username and email**  
+   - Passwords are securely **hashed** before storing  
+
+2. **Login**
+   - Authenticate users with **username and password**  
+   - Session management keeps users logged in  
+
+3. **Dashboard**
+   - Secure page accessible **only to logged-in users**  
+   - Logout button to safely end session  
+
+4. **Client-Side Enhancements**
+   - Show/Hide password toggle  
+   - Required field validation before form submission  
+   - Smooth animations for inputs and flash messages  
+
+---
+
