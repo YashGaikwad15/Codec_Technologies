@@ -15,3 +15,47 @@ A professional AI-powered chatbot built with Python, Flask, and NLP.
 4. Install dependencies: `pip install -r requirements.txt`
 5. Run app: `python app.py`
 6. Open browser: `http://127.0.0.1:5000`
+
+
+# Automated Resume Parser
+
+## Overview
+The **Automated Resume Parser** is a web application built with **Python, Flask, spaCy, and PostgreSQL**. It extracts structured information such as **name, email, and skills** from uploaded resumes (PDF or DOCX) and stores the data in a database for easy retrieval and analysis.
+
+This project demonstrates **NLP, web development, and database integration** — perfect for internship or portfolio presentations.
+
+---
+
+## Features
+
+- Upload **PDF** or **DOCX** resumes.
+- Automatically extract:
+  - Candidate Name
+  - Email Address
+  - Skills (keyword-based extraction)
+- Store parsed data in **PostgreSQL**.
+- Display parsed results on a clean, professional web interface.
+- Securely handles file uploads.
+- Modern UI with animations and result cards.
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Backend | Python, Flask |
+| NLP | spaCy (`en_core_web_sm`) |
+| Database | PostgreSQL |
+| Frontend | HTML, CSS (modern UI), JavaScript |
+| File Parsing | pdfplumber, python-docx |
+
+---
+
+## Installation
+
+1. **Clone the repository**
+
+```bash
+git clone <your-repo-url>
+cd resume-parser
