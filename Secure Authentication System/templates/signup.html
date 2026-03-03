@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+<h2>Sign Up</h2>
+<form method="POST">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <div style="position:relative;">
+        <input type="password" name="password" placeholder="Password" required style="width:100%; padding-right:50px;">
+        <span class="toggle-password" style="cursor:pointer; position:absolute; right:10px; top:50%; transform:translateY(-50%); font-size:12px;">Show</span>
+    </div>
+    <button type="submit">Sign Up</button>
+    <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+</form>
+{% endblock %}
