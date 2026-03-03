@@ -1,0 +1,6 @@
+Flask==3.0.0
+python-docx
+pdfplumber
+spacy
+psycopg2-binary
+pandas

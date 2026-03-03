@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Parser</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Resume (PDF or DOCX)</h2>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="resume" required>
+            <button type="submit">Upload & Parse</button>
+        </form>
+
+        {% if result %}
+        <div class="result">
+            <h3>Extracted Data:</h3>
+            <p><strong>Name:</strong> {{ result.name }}</p>
+            <p><strong>Skills:</strong> {{ result.skills | join(', ') }}</p>
+            <p><strong>Education:</strong> {{ result.education | join(', ') }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
