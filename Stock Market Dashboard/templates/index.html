@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Market Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Stock Market Dashboard</h1>
+
+    <form method="POST">
+        <input type="text" name="ticker" placeholder="Enter Stock Ticker (e.g. AAPL)" required>
+        <button type="submit">Fetch Data</button>
+    </form>
+
+    <canvas id="stockChart" width="600" height="300"></canvas>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        // If Flask sends data, use it; otherwise, show empty test chart
+        const chartData = {{ data|tojson }};
+        if (chartData && chartData.length > 0) {
+            renderStockChart(chartData, 'stockChart', '{{ ticker }} Closing Price', '{{ chart_color }}');
+        } else {
+            // Show sample chart when no data
+            const testData = [
+                {"Date":"2026-02-01","Close":150},
+                {"Date":"2026-02-02","Close":152},
+                {"Date":"2026-02-03","Close":148}
+            ];
+            renderStockChart(testData, 'stockChart', 'Test Closing Price', '#2ecc71');
+        }
+    </script>
+</div>
+</body>
+</html>
